@@ -169,32 +169,32 @@
             </div>
             	<div class="footer2">
             		<div class="footer2Center">
-                		<p>INFORMATION</p>
-                    	<p>ABOUT US</p>
-                    	<p>CUSTOMER SERVICE</p>
-                    	<p>TEMPLATES SETTING</p>
-                    	<p>PRIVACY POLICY</p>
-                    	<p>SITE MAP</p>
-                    	<p>SEARCH TERMS</p>
-                    	<p>ADVANCED SEARCH</p>
-                    	<p>ORDER AND RETURNS</p>
-                    	<p>CONTACT US</p>
+                            <p>INFORMATION</p>
+                            <p>ABOUT US</p>
+                            <p>CUSTOMER SERVICE</p>
+                            <p>TEMPLATES SETTING</p>
+                            <p>PRIVACY POLICY</p>
+                            <p>SITE MAP</p>
+                            <p>SEARCH TERMS</p>
+                            <p>ADVANCED SEARCH</p>
+                            <p>ORDER AND RETURNS</p>
+                            <p>CONTACT US</p>
                 	</div>
-                		<div class="footer2Center">
-                		<p>WHY BUY FROM US</p>
-                   		<p>SHIPPING AND RETURNS</p>
-                   	 	<p>SECURE SHOPPING</p>
-                    	<p>INTERNATIONAL SHIPPING</p>
-                    	<p>AFFILIATES</p>
-                    	<p>GROUP SALES</p>
-                		</div>
+                        <div class="footer2Center">
+                            <p>WHY BUY FROM US</p>
+                            <p>SHIPPING AND RETURNS</p>
+                            <p>SECURE SHOPPING</p>
+                            <p>INTERNATIONAL SHIPPING</p>
+                            <p>AFFILIATES</p>
+                            <p>GROUP SALES</p>
+                        </div>
                 	<div class="footer2Center">
-                		<p>MY ACCOUNT</p>
-                    	<p>SIGN IN</p>
-                    	<p>VIEW CART</p>
-                    	<p>MY WISHLIST</p>
-                    	<p>TRACK MY ORDER</p>
-                    	<p>HELP</p>
+                            <p>MY ACCOUNT</p>
+                            <p>SIGN IN</p>
+                            <p>VIEW CART</p>
+                            <p>MY WISHLIST</p>
+                            <p>TRACK MY ORDER</p>
+                            <p>HELP</p>
                 	</div>
             	</div>
             <div class="footer1">
