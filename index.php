@@ -26,7 +26,7 @@
                 </div>
                 <div class="bagMenu2">
             	   <ul>
-                	   <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
                         <li><a href="">LAPTOP</a></li>
                         <li><a href="">ACCESSORIES</a></li>
                         <li><a href="">SPAREPART</a></li>
