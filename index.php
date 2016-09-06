@@ -1,8 +1,9 @@
+<?php include ("config_mb/configure_mb.php");?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Project</title>
+<title><?php echo $site_title ?></title>
 <link href="home.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -26,11 +27,16 @@
                 </div>
                 <div class="bagMenu2">
             	   <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">LAPTOP</a></li>
-                        <li><a href="">ACCESSORIES</a></li>
-                        <li><a href="">SPAREPART</a></li>
-                        <li><a href="">CONTACT US</a></li>
+                       <?php
+                            $query = "SELECT * FROM sys_menus";
+                            $result = mysqli_query($dbc, $query);
+
+                            while ($nav = mysqli_fetch_assoc($result)) { ?>
+                                    <li><a href=""><?php echo $nav['label']; ?></a></li>
+
+                            <?php }
+                        ?>
+
                     </ul>
                 </div>
                 <div class="bagMenu3">
