@@ -33,9 +33,6 @@
 
                             while ($nav = mysqli_fetch_assoc($result)) { ?>
                                     <li><a href=""><?php echo $nav['label']; ?></a></li>
-                                    
-                                    test.. ini perubahan dari diastowo
-
                             <?php }
                         ?>
 
