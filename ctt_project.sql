@@ -66,3 +66,25 @@ ALTER TABLE `sys_menus`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+
+
+CREATE TABLE `sys_menu_laptop` (
+  `id` int(11) NOT NULL,
+  `label_brand` varchar(50) NOT NULL,
+  `link` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `sys_menu_laptop`
+--
+
+INSERT INTO `sys_menu_laptop` (`id`, `label_brand`, `link`) VALUES
+(1, 'ACER', 'acer.html'),
+(2, 'APPLE', 'facebook.com'),
+(3, 'ASUS', 'twitter.com'),
+(4, 'MSI', 'instagram.com'),
+(5, 'LENOVO', 'lenovo.html'),
+(6, 'TOSHIBA', 'toshiba.html');
+
