@@ -1,4 +1,7 @@
 <?php 
+include ("../config_mb/configure_mb.php");
+include ("../config_mb/getData.php");
+
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,8 +19,8 @@
     <title>Circle Table Tech.</title>
 
     <!-- CSS-->
-    <link href="/web_cttproject/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/web_cttproject/css/custom.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -41,7 +44,7 @@
   <div class="container">
 	  <div class="menu container">
 	 		<div class="col-md-2">
-                            <a href="/web_cttproject/index.php"><img src="/web_cttproject/images/logo.png"></a>
+                            <a href="../"><img src="../images/logo.png"></a>
 	 		</div>
 	 		<div class="col-md-10">
 	 			<nav class="navbar navbar-default">
@@ -64,17 +67,15 @@
 				        <li class="dropdown">
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LAPTOP<span class="caret"></span></a>
 				          <ul class="dropdown-menu">
-				            <li><a href="#">ACER</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">APPLE</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">ASUS</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">LENOVO</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">MSI</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">TOSHIBA</a></li>
+				            <?php
+                                            $query = "SELECT * FROM sys_menu_laptop";
+                                            $result = mysqli_query($dbc, $query);
+                                                while ($nav = mysqli_fetch_assoc($result)) { ?>
+                                                        <li><a href=<?php echo $nav['link'];  ?>><?php echo $nav['label_brand']; ?></a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                <?php }
+                                                
+                                            ?>
 				          </ul>
 				        </li>
 				        <li class="dropdown">
@@ -139,11 +140,11 @@
 	 	<div class="col-md-10">
 	 		<div class="row">
 	 		  <div class=" title col-md-12 text-center">
-		 		<h1>ACER</h1>
+                              <h1>ACER</h1>
 		 	  </div>
 			  <div class="col-sm-6 col-md-3 text-center">
 			    <div class="thumbnail">
-			      <img src="/web_cttproject/images/product/crop_top1.jpg">
+			      <img src="../images/product/crop_top1.jpg">
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
@@ -153,7 +154,7 @@
 			  </div>
 			  <div class="col-sm-6 col-md-3 text-center">
 			    <div class="thumbnail">
-			      <img src="/web_cttproject/images/product/crop_top1.jpg">
+			      <img src="../images/product/crop_top1.jpg">
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
@@ -163,7 +164,7 @@
 			  </div>
 			  <div class="col-sm-6 col-md-3 text-center">
 			    <div class="thumbnail">
-			      <img src="/web_cttproject/images/product/crop_top1.jpg">
+			      <img src="../images/product/crop_top1.jpg">
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
@@ -173,7 +174,7 @@
 			  </div>
 			  <div class="col-sm-6 col-md-3 text-center">
 			    <div class="thumbnail">
-			      <img src="/web_cttproject/images/product/crop_top1.jpg">
+			      <img src="../images/product/crop_top1.jpg">
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
@@ -349,7 +350,7 @@
 
 	 <footer class="container">
 	 	<div class="col-md-3">
-	 		<img src="/web_cttproject/images/logo.png">
+	 		<img src="../images/logo.png">
 	 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 	 	</div>
 	 	<div class="col-md-6">
@@ -431,6 +432,6 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/web_cttproject/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
