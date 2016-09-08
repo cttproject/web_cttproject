@@ -1,3 +1,11 @@
+<?php 
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,8 +16,8 @@
     <title>Circle Table Tech.</title>
 
     <!-- CSS-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="/web_cttproject/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/web_cttproject/css/custom.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -33,7 +41,7 @@
   <div class="container">
 	  <div class="menu container">
 	 		<div class="col-md-2">
-	 			<a href="#"><img src="images/logo.png"></a>
+                            <a href="/web_cttproject/index.php"><img src="/web_cttproject/images/logo.png"></a>
 	 		</div>
 	 		<div class="col-md-10">
 	 			<nav class="navbar navbar-default">
@@ -120,7 +128,7 @@
 			</div>
 			<div class="list-group">
 				<p class="list-group-item active">
-						    Kisaran Harga
+					Kisaran Harga
 				</p>
 				<a href="#" class="list-group-item">1jt < 3jt</a>
 				<a href="#" class="list-group-item">3jt < 6jt</a>
@@ -131,11 +139,11 @@
 	 	<div class="col-md-10">
 	 		<div class="row">
 	 		  <div class=" title col-md-12 text-center">
-		 		<h1>MSI</h1>
+		 		<h1>ACER</h1>
 		 	  </div>
 			  <div class="col-sm-6 col-md-3 text-center">
 			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
+			      <img src="/web_cttproject/images/product/crop_top1.jpg">
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
@@ -145,7 +153,7 @@
 			  </div>
 			  <div class="col-sm-6 col-md-3 text-center">
 			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
+			      <img src="/web_cttproject/images/product/crop_top1.jpg">
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
@@ -155,7 +163,7 @@
 			  </div>
 			  <div class="col-sm-6 col-md-3 text-center">
 			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
+			      <img src="/web_cttproject/images/product/crop_top1.jpg">
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
@@ -165,7 +173,7 @@
 			  </div>
 			  <div class="col-sm-6 col-md-3 text-center">
 			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
+			      <img src="/web_cttproject/images/product/crop_top1.jpg">
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
@@ -341,7 +349,7 @@
 
 	 <footer class="container">
 	 	<div class="col-md-3">
-	 		<img src="images/logo.png">
+	 		<img src="/web_cttproject/images/logo.png">
 	 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 	 	</div>
 	 	<div class="col-md-6">
@@ -423,6 +431,6 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/web_cttproject/js/bootstrap.min.js"></script>
   </body>
 </html>
