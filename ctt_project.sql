@@ -88,3 +88,25 @@ INSERT INTO `sys_menu_laptop` (`id`, `label_brand`, `link`) VALUES
 (5, 'LENOVO', 'lenovo.html'),
 (6, 'TOSHIBA', 'toshiba.html');
 
+/*QUERY PRINTER*/
+CREATE TABLE `sys_menu_printer` (
+  `id` int(11) NOT NULL,
+  `label_brand` varchar(20) NOT NULL,
+  `link` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `sys_menu_printer` (`id`, `label_brand`, `link`) VALUES
+(1, 'HP', '#'),
+(2, 'EPSON', '#'),
+(3, 'XEROX', '#'),
+(4, 'SAMSUNG', '#'),
+(5, 'CANON', '#');
+
+
+ALTER TABLE `sys_menu_printer`
+  ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `sys_menu_printer`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
