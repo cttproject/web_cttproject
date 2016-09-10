@@ -67,7 +67,11 @@ include ("../config_mb/getData.php");
 	 	<div class="col-md-10">
 	 		<div class="row">
 	 		  <div class=" title col-md-12 text-center">
-                              <h1>ACER</h1>
+                              <h1>
+                                  <?php
+                                  echo get_label($dbc, $label)['label_brand'];
+                                  ?>
+                              </h1>
 		 	  </div>
 			  <div class="col-sm-6 col-md-3 text-center">
 			    <div class="thumbnail">

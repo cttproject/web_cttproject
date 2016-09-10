@@ -40,7 +40,16 @@
 				<p class="list-group-item active">
 				    Pilih Accessories
 				</p>
-				<a href="#" class="list-group-item">LCD</a>
+                                <?php
+                                    $query = "SELECT * FROM sys_menu_accesoris order by label_cat";
+                                    $result = mysqli_query($dbc, $query);
+
+                                    while ($nav = mysqli_fetch_assoc($result)) { ?>
+                                        <a href="<?php echo $nav['link'];  ?>?page=<?php echo $nav['id'];?>"
+                                           class="list-group-item"><?php echo $nav['label_cat']; ?></a>
+                                    <?php }
+                                ?>
+<!--				<a href="#" class="list-group-item">LCD</a>
 				<a href="#" class="list-group-item">Keyboard</a>
 				<a href="#" class="list-group-item">Mouse</a>
 				<a href="#" class="list-group-item">Mouse Pad</a>
@@ -56,7 +65,7 @@
 				<a href="#" class="list-group-item">Flashdisk</a>
 				<a href="#" class="list-group-item">Harddisk External</a>
 				<a href="#" class="list-group-item">USB Acc</a>
-				<a href="#" class="list-group-item">Meja Komputer</a>
+				<a href="#" class="list-group-item">Meja Komputer</a>-->
 			</div>
 		</div>
 	 	<div class="col-md-10">

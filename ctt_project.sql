@@ -110,3 +110,40 @@ ALTER TABLE `sys_menu_printer`
 ALTER TABLE `sys_menu_printer`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
+-- TABLE AKSESORIS
+CREATE TABLE `sys_menu_accesoris` (
+  `id` int(11) NOT NULL,
+  `label_cat` varchar(20) NOT NULL,
+  `link` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `sys_menu_accesoris`
+--
+
+INSERT INTO `sys_menu_accesoris` (`id`, `label_cat`, `link`) VALUES
+(1, 'LCD', '#'),
+(2, 'MOUSE', '#');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `sys_menu_accesoris`
+--
+ALTER TABLE `sys_menu_accesoris`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `sys_menu_accesoris`
+--
+ALTER TABLE `sys_menu_accesoris`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
