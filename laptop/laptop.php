@@ -1,6 +1,6 @@
 <?php 
 include ("../config_mb/configure_mb.php");
-include ("../config_mb/getData.php");
+include ("../config_mb/get_menu_laptop_label.php");
 
 /* 
  * To change this license header, choose License Headers in Project Properties.

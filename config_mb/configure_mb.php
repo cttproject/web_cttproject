@@ -17,12 +17,6 @@ include('data_mb.php');
 
 $site_title = 'CTTProject 1.0';
 
-//if (isset($_GET['page'])) {
-//	$pageid = $_GET['page'];
-//} else {
-//	$pageid = 1;
-//}
-
 if (isset($_GET['page'])) {
 	$label = $_GET['page'];
 } else {
