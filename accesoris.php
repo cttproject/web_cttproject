@@ -63,7 +63,7 @@
 				<a href="#" class="list-group-item">Flashdisk</a>
 				<a href="#" class="list-group-item">Harddisk External</a>
 				<a href="#" class="list-group-item">USB Acc</a>
-				<a href="#" class="list-group-item">Komputer</a>
+				<a href="#" class="list-group-item">Meja Komputer</a>
 			</div>
 		</div>
 	 	<div class="col-md-10">
