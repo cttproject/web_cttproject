@@ -1,11 +1,4 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
+<?php include ("config_mb/configure_mb.php");?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -77,7 +70,8 @@
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
+			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
+			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -87,7 +81,8 @@
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
+			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
+			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -97,7 +92,8 @@
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
+			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
+			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -107,7 +103,8 @@
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
+			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
+			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -119,7 +116,8 @@
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
+			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
+			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -129,7 +127,8 @@
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
+			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
+			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -139,7 +138,8 @@
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
+			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
+			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -149,7 +149,8 @@
 			      <div class="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
+			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
+			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -235,8 +236,8 @@
 
 	 <div class="footerbot container">
 	 	<p>Circle Table Tech. &copy; 2016</p>
-	 </div>
- </div><!--end of footerbot-->
+	 </div><!--end of footerbot-->
+ </div><!--end of container-->
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

@@ -19,12 +19,12 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="/web_cttproject/">HOME</a></li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LAPTOP<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                           <?php
-                                $query = "SELECT * FROM sys_menu_laptop";
+                                $query = "SELECT * FROM sys_menu_laptop order by label_brand";
                                 $result = mysqli_query($dbc, $query);
 
                                 while ($nav = mysqli_fetch_assoc($result)) { ?>
@@ -37,14 +37,23 @@
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRINTER<span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#">HP</a></li>
+                      <?php
+                          $query = "SELECT * FROM sys_menu_printer order by label_brand";
+                          $result = mysqli_query($dbc, $query);
+
+                          while ($nav = mysqli_fetch_assoc($result)) { ?>
+                                  <li><a href=<?php echo $nav['link'];  ?>><?php echo $nav['label_brand']; ?></a></li>
+                                  <li role="separator" class="divider"></li>
+                          <?php }
+                      ?>
+                       <!--  <li><a href="#">HP</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">EPSON</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">XEROX</a></li>
+                        <li><a href="#">XEROX</a></li> -->
                       </ul>
                     </li>
-                    <li><a href="accesoris.php">ACCESSORIS</a></li>
+                    <li><a href="/web_cttproject/accesoris.php">ACCESSORIS</a></li>
                     <li><a href="#">SPAREPART</a></li>
                   </ul>
                   <form class="navbar-form navbar-left">
