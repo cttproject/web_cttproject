@@ -84,46 +84,24 @@
 	 		<h1>NEW PRODUCTS</h1>
 	 	</div>
 	 	<div class="row">
-		  <div class="col-sm-6 col-md-3 text-center">
-		    <div class="thumbnail">
-		      <img src="images/product/crop_top1.jpg">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col-sm-6 col-md-3 text-center">
-		    <div class="thumbnail">
-		      <img src="images/product/crop_top1.jpg">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col-sm-6 col-md-3 text-center">
-		    <div class="thumbnail">
-		      <img src="images/product/crop_top1.jpg">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col-sm-6 col-md-3 text-center">
-		    <div class="thumbnail">
-		      <img src="images/product/crop_top1.jpg">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">Detail</a></p>
-		      </div>
-		    </div>
-		  </div>
+                    <?php   
+                        $query = "select * from sys_product";
+                        $result = mysqli_query($dbc, $query);
+                        
+                        while ($nav = mysqli_fetch_assoc($result)) { ?>
+                            <div class="col-sm-6 col-md-3 text-center">
+                                <div class="thumbnail">
+                                  <img src="images/product/crop_top1.jpg">
+                                  <div class="caption">
+                                    <h3><?php echo $nav['label']; ?></h3>
+                                    <p><?php echo $nav['price']; ?></p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Detail</a>
+                                    <a href="#" class="btn btn-primary" role="button">Beli</a></p>
+                                  </div>
+                                </div>
+                            </div>
+                        <?php }
+                    ?>
 		</div>
 	 </div><!--end of product-->
 
