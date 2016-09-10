@@ -46,11 +46,6 @@
                                   <li role="separator" class="divider"></li>
                           <?php }
                       ?>
-                       <!--  <li><a href="#">HP</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">EPSON</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">XEROX</a></li> -->
                       </ul>
                     </li>
                     <li><a href="/web_cttproject/accesoris.php">ACCESSORIS</a></li>
