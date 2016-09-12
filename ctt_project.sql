@@ -83,3 +83,26 @@ ALTER TABLE `sys_menu_accesoris`
 
 ALTER TABLE `sys_menu_accesoris`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  
+ 
+
+  CREATE TABLE `sys_product` (
+  `id` int(11) NOT NULL,
+  `label` varchar(100) NOT NULL,
+  `price` int(100) DEFAULT NULL,
+  `brand_id` int(10) NOT NULL,
+  `cat_id` int(10) NOT NULL,
+  `time` date DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `images` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `sys_product` (`id`, `label`, `price`, `brand_id`, `cat_id`, `time`, `description`, `images`) VALUES
+(1, 'Asus Zenfone 5', 50000, 3, 1, '2016-09-01', 'comming soon', NULL),
+(2, 'Kipas Angin', 25000, 2, 1, '2016-09-01', 'Adem', NULL),
+(3, 'Tempat Sampah', 500000, 3, 2, '2016-09-02', 'Muat Banyak', NULL);
+
+ALTER TABLE `sys_product`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `sys_product`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
