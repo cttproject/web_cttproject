@@ -13,7 +13,7 @@ $dbc = mysqli_connect($host, $user, $password, $database) OR die ('Error : '.mys
 //DEFINE('D_TEMPLATE', 'template');
 
 #Fungctions:
-include('data_mb.php');
+//include('data_mb.php');
 
 $site_title = 'CTTProject 1.0';
 
