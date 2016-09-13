@@ -10,21 +10,21 @@ $database = 'ctt_project';
 $dbc = mysqli_connect($host, $user, $password, $database) OR die ('Error : '.mysqli_connect_error());
 
 # Constant
-DEFINE('D_TEMPLATE', 'template');
+//DEFINE('D_TEMPLATE', 'template');
 
 #Fungctions:
-include('data_mb.php');
+//include('data_mb.php');
 
 $site_title = 'CTTProject 1.0';
 
-//if (isset($_GET['page'])) {
-//	$pageid = $_GET['page'];
-//} else {
-//	$pageid = 1;
-//}
+if (isset($_GET['page'])) {
+	$label = $_GET['page'];
+} else {
+	$label = 1;
+}
 
 #Page Setup
-$page_content = data_page($dbc);
+//$page_content = data_page($dbc);
 
 
 /* 

@@ -9,7 +9,7 @@
     <title>Circle Table Tech.</title>
 
     <!-- CSS-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -37,26 +37,18 @@
 	 <div class="accessories container">
 	 	<div class="selection col-md-2">
 	 		<div class="list-group">
-				<p class="list-group-item active">
-				    Pilih Accessories
-				</p>
-				<a href="#" class="list-group-item">LCD</a>
-				<a href="#" class="list-group-item">Keyboard</a>
-				<a href="#" class="list-group-item">Mouse</a>
-				<a href="#" class="list-group-item">Mouse Pad</a>
-				<a href="#" class="list-group-item">Speaker</a>
-				<a href="#" class="list-group-item">UPS</a>
-				<a href="#" class="list-group-item">UPS Acc</a>
-				<a href="#" class="list-group-item">Stabiliser</a>
-				<a href="#" class="list-group-item">Scanner</a>
-				<a href="#" class="list-group-item">Cooler Fan</a>
-				<a href="#" class="list-group-item">Drawing Tablet</a>
-				<a href="#" class="list-group-item">Headset/Earphone</a>
-				<a href="#" class="list-group-item">Media Player</a>
-				<a href="#" class="list-group-item">Flashdisk</a>
-				<a href="#" class="list-group-item">Harddisk External</a>
-				<a href="#" class="list-group-item">USB Acc</a>
-				<a href="#" class="list-group-item">Meja Komputer</a>
+                            <p class="list-group-item active">
+                                Pilih Accessories
+                            </p>
+                            <?php
+                                $query = "SELECT * FROM sys_menu_accesoris order by label_cat";
+                                $result = mysqli_query($dbc, $query);
+
+                                while ($nav = mysqli_fetch_assoc($result)) { ?>
+                                    <a href="<?php echo $nav['link'];  ?>?page=<?php echo $nav['id'];?>"
+                                       class="list-group-item"><?php echo $nav['label_cat']; ?></a>
+                                <?php }
+                            ?>
 			</div>
 		</div>
 	 	<div class="col-md-10">
@@ -64,96 +56,25 @@
 	 		  <div class=" title col-md-12 text-center">
 		 		<h1>ACCESSORIES</h1>
 		 	  </div>
-			  <div class="col-sm-6 col-md-3 text-center">
-			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
-			      <div class="caption">
-			        <h3>Thumbnail label</h3>
-			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
-			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col-sm-6 col-md-3 text-center">
-			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
-			      <div class="caption">
-			        <h3>Thumbnail label</h3>
-			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
-			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col-sm-6 col-md-3 text-center">
-			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
-			      <div class="caption">
-			        <h3>Thumbnail label</h3>
-			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
-			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col-sm-6 col-md-3 text-center">
-			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
-			      <div class="caption">
-			        <h3>Thumbnail label</h3>
-			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
-			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<div class="row">
-	 		  <div class="col-sm-6 col-md-3 text-center">
-			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
-			      <div class="caption">
-			        <h3>Thumbnail label</h3>
-			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
-			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col-sm-6 col-md-3 text-center">
-			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
-			      <div class="caption">
-			        <h3>Thumbnail label</h3>
-			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
-			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col-sm-6 col-md-3 text-center">
-			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
-			      <div class="caption">
-			        <h3>Thumbnail label</h3>
-			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
-			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col-sm-6 col-md-3 text-center">
-			    <div class="thumbnail">
-			      <img src="images/product/crop_top1.jpg">
-			      <div class="caption">
-			        <h3>Thumbnail label</h3>
-			        <p>...</p>
-			        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
-			        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
-			      </div>
-			    </div>
-			  </div>
+                            <?php
+                            $query = "select * from sys_product";
+                            $result = mysqli_query($dbc, $query);
+                            
+                            while ($product =  mysqli_fetch_assoc($result)){?>
+                                <div class="col-sm-6 col-md-4 text-center">
+                                    <div class="thumbnail">
+                                      <img src="images/product/crop_top1.jpg">
+                                      <div class="caption">
+                                        <h3><?php echo $product['label']; ?></h3>
+                                        <p><?php echo $product['price']; ?></p>
+                                        <p><a href="#" class="btn btn-primary" role="button">Detail</a>
+                                        <a href="#" class="btn btn-primary" role="button">Beli</a></p>
+                                      </div>
+                                    </div>
+                                </div>
+                            <?php }
+                            ?>
+			  			  
 			</div>
 		</div>
 	 </div><!--end of laptop-->

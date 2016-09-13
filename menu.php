@@ -28,7 +28,7 @@
                                 $result = mysqli_query($dbc, $query);
 
                                 while ($nav = mysqli_fetch_assoc($result)) { ?>
-                                        <li><a href=<?php echo $nav['link'];  ?>><?php echo $nav['label_brand']; ?></a></li>
+                                        <li <?php if ($label == $nav['id']) { echo ' class="active"'; }?>><a href="<?php echo $nav['link'];  ?>?page=<?php echo $nav['id'];?>"><?php echo $nav['label_brand']; ?></a></li>
                                         <li role="separator" class="divider"></li>
                                 <?php }
                             ?>
@@ -46,11 +46,6 @@
                                   <li role="separator" class="divider"></li>
                           <?php }
                       ?>
-                       <!--  <li><a href="#">HP</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">EPSON</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">XEROX</a></li> -->
                       </ul>
                     </li>
                     <li><a href="/web_cttproject/accesoris.php">ACCESSORIS</a></li>
