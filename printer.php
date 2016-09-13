@@ -268,7 +268,7 @@ include ("../config_mb/get_menu_laptop_label.php");
 				</div>
 			</div>
 		</div>
-	 </div><!--end of laptop-->
+	 </div><!--end of printer-->
              <?php include ("../footer.php")?><!--get Footer.php-->
  </div><!--end of footerbot-->
 
