@@ -89,7 +89,7 @@
                         $result = mysqli_query($dbc, $query);
                         
                         while ($nav = mysqli_fetch_assoc($result)) { ?>
-                            <div class="col-sm-6 col-md-3 text-center">
+                            <div class="col-sm-6 col-md-4 text-center">
                                 <div class="thumbnail">
                                   <img src="images/product/crop_top1.jpg">
                                   <div class="caption">
