@@ -61,7 +61,7 @@
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-placement="bottom" title="Sign In or Sign Up"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#">Sign In</a></li>
+                          <li><a href="signin.php">Sign In</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="signup.html">Sign Up</a></li>
                       </ul>
