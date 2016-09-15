@@ -488,7 +488,31 @@ hr{
     }
 }*/
 
-
-
+/*----------------------------SIGNIN AND SIGNUP------------------------------*/
+.menu .navbar-right .modal .modal-header {
+  background-color: #0AB3A3;
+}
+.menu .navbar-right .modal .glyphicon {
+  color: black;
+}
+.menu .navbar-right .modal h3 {
+  color: white;
+}
+.menu .navbar-right .modal .modal-body .form-control {
+  height: 40px;
+}
+.container-customss{
+    width: 100%;
+    vertical-align: central;
+}
+.container-customss .form-control {
+  margin-bottom: 10px;
+  height: 40px;
+}
+.well-custom{
+    float:none;
+    margin: 100px auto;
+    max-width: 50%;
+}
 
 

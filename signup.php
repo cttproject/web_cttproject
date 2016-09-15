@@ -66,7 +66,7 @@ if (isset($_POST['signup'])) {
 <div class="container-customss">
     <div class="row-custom">
         <div class="col-md-4 well well-sm well-custom">
-            <legend><a href="#"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
+            <h3><a href="#"><span class="glyphicon glyphicon-user"></span></a> Sign up!</h3>
             <form action="#" method="post" class="form" role="form">
             <div class="row">
                 <div class="col-xs-6 col-md-6">
