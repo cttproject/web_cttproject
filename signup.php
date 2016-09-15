@@ -90,7 +90,7 @@ if (isset($_POST['signup'])) {
                 Birth Date</label>
             <div class="row">
                 <div class="col-xs-4 col-md-4">
-                    <input class="form-control"  type="datetime" id="example1">
+                    <input class="form-control"  type="datetime" id="example1" placeholder="dd/mm.yyyy">
                 </div>
                 
             </div>
