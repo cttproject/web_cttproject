@@ -1,3 +1,30 @@
+<?php
+session_start();
+
+if(isset($_SESSION['usr_id'])!="") {
+    header("Location: index.php");
+}
+
+include_once ("config_mb/configure_mb.php");
+
+//check if form is submitted
+if (isset($_POST['login'])) {
+
+    $email = mysqli_real_escape_string($dbc, $_POST['email']);
+    $password = mysqli_real_escape_string($dbc, $_POST['password']);
+    $result = mysqli_query($dbc, "SELECT * FROM sys_signup WHERE email = '" . $email. "' and password = '" . md5($password) . "'");
+
+    if ($row = mysqli_fetch_array($result)) {
+        $_SESSION['usr_id'] = $row['id'];
+        $_SESSION['usr_name'] = $row['name'];
+        header("Location: index.php");
+    } else {
+        $errormsg = "Incorrect Email or Password!!!";
+    }
+}
+?>
+
+
 <!doctype html>
 <html>
 <head>
@@ -12,20 +39,31 @@
 <div class="container-customss">
     <div class="row-custom">
         <div class="col-md-4 well well-sm well-custom">
-            <legend><a href="#"><i class="glyphicon glyphicon-globe"></i></a> Sign in!</legend>
-            <form action="#" method="post" class="form" role="form">
-            <div class="row">
-                <div class="col-xs-12 col-md-12">
-                    <input class="form-control" name="email" placeholder="Email Address" type="text"
-                        required autofocus />
-                </div>
-            </div>
-            <input class="form-control" name="password" placeholder="Password" type="password" />
-            <br />
-            <br />
-            <button class="btn btn-lg btn-primary btn-block" type="submit">
-                Sign in</button>
+            <form role="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" name="loginform">
+            <fieldset>
+                    <legend>Login</legend>
+                    
+                    <div class="form-group">
+                        <label for="name">Email</label>
+                        <input type="text" name="email" placeholder="Your Email" required class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Password</label>
+                        <input type="password" name="password" placeholder="Your Password" required class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" name="login" value="Login" class="btn btn-primary" />
+                    </div>
+                </fieldset>
             </form>
+            <span class="text-danger"><?php if (isset($errormsg)) { echo $errormsg; } ?></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">    
+        New User? <a href="signup.php">Sign Up Here</a>
         </div>
     </div>
 </div>
