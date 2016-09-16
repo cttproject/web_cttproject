@@ -1,4 +1,9 @@
-<?php include ("config_mb/configure_mb.php");?>
+<?php 
+session_start();
+include_once ("config_mb/configure_mb.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
