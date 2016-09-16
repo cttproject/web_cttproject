@@ -69,13 +69,13 @@ if (isset($_POST['signup'])) {
             <h3><a href="#"><span class="glyphicon glyphicon-user"></span></a> Sign up!</h3>
             <form action="#" method="post" class="form" role="form">
             <div class="row">
-                <div class="col-xs-6 col-md-6">
+                <div class="col-sm-6 col-md-6">
                     <input class="form-control" name="firstname" placeholder="First Name" type="text"
                         required value="<?php if($error) echo $firstname; ?>"> 
 
                         <span class="text-danger"><?php if (isset($name_error)) echo $name_error; ?></span>
                 </div>
-                <div class="col-xs-6 col-md-6">
+                <div class="col-sm-6 col-md-6">
                     <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
                 </div>
             </div>
@@ -89,7 +89,7 @@ if (isset($_POST['signup'])) {
             <label for="">
                 Birth Date</label>
             <div class="row">
-                <div class="col-xs-4 col-md-4">
+                <div class="col-sm-4 col-md-4">
                     <input class="form-control"  type="datetime" id="example1" placeholder="dd/mm/yyyy">
                 </div>
                 
