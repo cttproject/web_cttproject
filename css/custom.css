@@ -394,9 +394,9 @@ ol, ul {
 .panel-footer{
     background:#fff;
 }
-.btn{
+/*.btn{
     border-radius: 1px;
-}
+}*/
 .btn-sm, .btn-group-sm > .btn{
     border-radius: 1px;
 }
