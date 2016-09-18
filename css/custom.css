@@ -71,7 +71,7 @@ header p {
 	font-size: 14px;
 }
 .latespost .post img {
-	width: 250px;
+/*	width: 250px;*/
 }
 footer {
 	background-color: #F6F6F6;
@@ -515,4 +515,16 @@ hr{
     max-width: 50%;
 }
 
+.headline{
+    margin-bottom: 20px;
+}
 
+.img-padding{
+    padding: 10px;
+}
+.post-white{
+    background-color: #ffffff
+}
+.btn-padd-bottom{
+    padding-bottom: 10px;
+}
