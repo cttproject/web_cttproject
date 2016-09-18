@@ -85,7 +85,7 @@ ALTER TABLE `sys_menu_accesoris`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
   
  
-
+-- TABLE PRODUCT
   CREATE TABLE `sys_product` (
   `id` int(11) NOT NULL,
   `label` varchar(100) NOT NULL,
@@ -106,3 +106,21 @@ ALTER TABLE `sys_product`
   ADD PRIMARY KEY (`id`);
 ALTER TABLE `sys_product`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+
+--TABLE SIGNUP >>> UBAH KE sys_user/sys_account aja
+CREATE TABLE `sys_signup` (
+  `id` int(8) NOT NULL,
+  `firstname` varchar(30) NOT NULL,
+  `lastname` varchar(30) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `password` varchar(40) NOT NULL,
+  `birthtime` date DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+ALTER TABLE `sys_signup`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+ALTER TABLE `sys_signup`
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
