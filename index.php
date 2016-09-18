@@ -165,7 +165,7 @@ include_once ("config_mb/configure_mb.php");
 	 		<center>
 		 		<div class="col-md-6 post">
 		 			<div class="col-md-6">
-		 				<img src="images/img2.jpg">
+		 				<img class="img-responsive" src="images/img2.jpg">
 		 			</div>
 		 			<div class="col-md-6">
 		 				<small>01-01-2016</small>
