@@ -1,12 +1,7 @@
 <?php
 
-session_start();
 
-if(isset($_SESSION['sys_id'])) {
-    header("Location: index.php");
-    }
 
-    include_once ("config_mb/configure_mb.php");
 
 //set validation error flag as false
 $error = false;
@@ -52,68 +47,66 @@ if (isset($_POST['signup'])) {
 ?>
 
 
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Sign Up</title>
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/custom.css">
-</head>
 
 <body>
 
-<div class="container-customss">
-    <div class="row-custom">
-        <div class="col-md-4 well well-sm well-custom">
-            <h3><a href="#"><span class="glyphicon glyphicon-user"></span></a> Sign up!</h3>
-            <form action="#" method="post" class="form" role="form">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <input class="form-control" name="firstname" placeholder="First Name" type="text"
-                        required value="<?php if($error) echo $firstname; ?>"> 
+<div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h3><a href="#"><span class="glyphicon glyphicon-user"></span></a> Sign up!</h3>
+                                          </div>
+                                          <div class="modal-body">
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                  <form action="#" method="post" class="form" role="form">
+                                                  <div class="row">
+                                                      <div class="col-md-6 col-sm-6">
+                                                          <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                                                              required value="<?php if($error) echo $firstname; ?>"> 
 
-                        <span class="text-danger"><?php if (isset($name_error)) echo $name_error; ?></span>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
-                </div>
-            </div>
-            <input class="form-control" name="email" placeholder="Your Email" type="email" required value="<?php if($error) echo $email; ?>"/>
-            <span class="text-danger"><?php if (isset($email_error)) echo $email_error; ?></span>
+                                                              <span class="text-danger"><?php if (isset($name_error)) echo $name_error; ?></span>
+                                                      </div>
+                                                      <div class="col-md-6 col-sm-6">
+                                                          <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                                                      </div>
+                                                  </div>
+                                                  <input class="form-control" name="email" placeholder="Your Email" type="email" required value="<?php if($error) echo $email; ?>"/>
+                                                  <span class="text-danger"><?php if (isset($email_error)) echo $email_error; ?></span>
 
-            <input class="form-control" name="password" placeholder="New Password" type="password" />
-            <span class="text-danger"><?php if (isset($password_error)) echo $password_error; ?></span>
-            <input class="form-control" name="repassword" placeholder="Re-Password" type="password" />
-            <span class="text-danger"><?php if (isset($repassword_error)) echo $repassword_error; ?></span>
-            <label for="">
-                Birth Date</label>
-            <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <input class="form-control"  type="datetime" id="example1" placeholder="dd/mm/yyyy">
-                </div>
-                
-            </div>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
-                Male
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
-                Female
-            </label>
-            <br />
-            <br />
-            <button class="btn btn-lg btn-primary btn-block" value="Sign Up" name="signup"   type="submit">
-                Sign up</button>
-            </form>
-            <span class="text-success"><?php if (isset($successmsg)) { echo $successmsg; } ?></span>
-            <span class="text-danger"><?php if (isset($errormsg)) { echo $errormsg; } ?></span>
-        </div>
-    </div>
-<div class="row">
-        <div class="col-md-4 col-md-offset-4 text-center">    
-        Already Registered? <a href="login.php">Login Here</a>
+                                                  <input class="form-control" name="password" placeholder="New Password" type="password" />
+                                                  <span class="text-danger"><?php if (isset($password_error)) echo $password_error; ?></span>
+                                                  <input class="form-control" name="repassword" placeholder="Re-Password" type="password" />
+                                                  <span class="text-danger"><?php if (isset($repassword_error)) echo $repassword_error; ?></span>
+                                                  <label for="">
+                                                      Birth Date</label>
+                                                  <div class="row">
+                                                      <div class="col-md-4 col-sm-4">
+                                                          <input class="form-control"  type="datetime" id="example1" placeholder="dd/mm/yyyy">
+                                                      </div>
+                                                      
+                                                  </div>
+                                                  <label class="radio-inline">
+                                                      <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                                                      Male
+                                                  </label>
+                                                  <label class="radio-inline">
+                                                      <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                                                      Female
+                                                  </label>
+                                                  <br />
+                                                  <br />
+                                                  <button class="btn btn-lg btn-primary btn-block" value="Sign Up" name="signup"   type="submit">
+                                                      Sign up</button>
+                                                  </form>
+                                                  <span class="text-success"><?php if (isset($successmsg)) { echo $successmsg; } ?></span>
+                                                  <span class="text-danger"><?php if (isset($errormsg)) { echo $errormsg; } ?></span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <div class="row">
+                                              <div class="col-md-4 col-md-offset-4 text-center">    
+                                              <a>Already Registered? <a href="login.php">Login Here</a>
         </div>
     </div>
     
