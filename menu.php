@@ -1,11 +1,10 @@
 <?php
 
-session_start();
+//session_start();
 
 if(isset($_SESSION['sys_id'])) {
     header("Location: index.php");
     }
-
     include_once ("config_mb/configure_mb.php");
 
 //set validation error flag as false
@@ -52,7 +51,7 @@ if (isset($_POST['signup'])) {
 
 <div class="menu container">
     <div class="col-md-2">
-            <a href="/web_cttproject/"><img src="/web_cttproject/images/logo.png"></a>
+            <a href="/web_cttproject/"><img src="/web_cttproject/images/logo web2.png"></a>
     </div>
     <div class="col-md-10">
             <nav class="navbar navbar-default">

@@ -33,7 +33,7 @@ include_once ("config_mb/configure_mb.php");
   		<div class="col-md-12">
   			<p>Welcome to our online store</p>
   		</div>
-  	</div> 
+  	</div>
   </header><!--end of header-->
 
   <div class="container">

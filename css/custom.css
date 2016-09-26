@@ -18,7 +18,7 @@ header p {
 	border: 0px;
 }
 .menu .navbar button {
-	background-color: #0AB3A3;
+	background-color: #3299e1;
 	color: #FFFFFF;
 }
 .navbar-brand {
@@ -37,7 +37,7 @@ header p {
 }
 .title {
 	margin-bottom: 20px;
-	color: #0AB3A3;
+	color: #1c679b;
 	padding: 10px 0px;
 }
 .services {
@@ -51,7 +51,7 @@ header p {
 	background-color: #FFFFFF;
 }
 .latespost button {
-	background-color: #0AB3A3;
+	background-color: #3299e1;
 	color: #FFFFFF;
 }	
 .latespost .allpost {
@@ -64,7 +64,7 @@ header p {
 	font-size: 18px;
 }
 .latespost .post small {
-	color: #0AB3A3;
+	color: #3299e1;
 }
 .latespost .post .plast {
 	color: #888888;
@@ -73,6 +73,11 @@ header p {
 .latespost .post img {
 /*	width: 250px;*/
 }
+
+.img-logo{
+    max-width: 70px;
+}
+
 footer {
 	background-color: #F6F6F6;
 	padding: 15px;
@@ -88,7 +93,7 @@ footer img {
 	margin-bottom: 10px;
 }
 footer .panel form button {
-	background-color: #0AB3A3;
+	background-color: #3299e1;
 	color: #FFFFFF;
 }
 footer ul {
