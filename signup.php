@@ -48,7 +48,6 @@ if (isset($_POST['signup'])) {
     }
 }
     
-
 ?>
 
 
@@ -111,7 +110,7 @@ if (isset($_POST['signup'])) {
             <span class="text-danger"><?php if (isset($errormsg)) { echo $errormsg; } ?></span>
         </div>
     </div>
-<div class="row">
+    <div class="row">
         <div class="col-md-4 col-md-offset-4 text-center">    
         Already Registered? <a href="login.php">Login Here</a>
         </div>
