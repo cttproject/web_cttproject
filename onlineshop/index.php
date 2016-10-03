@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include_once ("config_mb/configure_mb.php");
+include_once("config_mb/configure_mb.php");
 ?>
 
 
@@ -14,8 +14,8 @@ include_once ("config_mb/configure_mb.php");
     <title><?php echo $site_title ?></title>
 
     <!-- CSS-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -37,7 +37,7 @@ include_once ("config_mb/configure_mb.php");
   </header><!--end of header-->
 
   <div class="container">
-	  <?php include("menu.php")?>
+	  <?php include("menu.php") ?>
 	 <div class="banner container">
 	 	<div class="col-md-12 banner2">
 	 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -51,19 +51,19 @@ include_once ("config_mb/configure_mb.php");
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
-			      <img src="images/banner1.jpg" alt="...">
+			      <img src="../images/banner1.jpg" alt="...">
 			      <div class="carousel-caption">
 			        New Brand
 			      </div>
 			    </div>
 			    <div class="item">
-			      <img src="images/banner1.jpg" alt="...">
+			      <img src="../images/banner1.jpg" alt="...">
 			      <div class="carousel-caption">
 			         New Brand
 			      </div>
 			    </div>
 			    <div class="item">
-			      <img src="images/banner1.jpg" alt="...">
+			      <img src="../images/banner1.jpg" alt="...">
 			      <div class="carousel-caption">
 			         New Brand
 			      </div>
@@ -96,7 +96,7 @@ include_once ("config_mb/configure_mb.php");
                         while ($nav = mysqli_fetch_assoc($result)) { ?>
                             <div class="col-sm-6 col-md-4 text-center">
                                 <div class="thumbnail">
-                                  <img src="images/product/crop_top1.jpg">
+                                  <img src="../images/product/crop_top1.jpg">
                                   <div class="caption">
                                     <h3><?php echo $nav['label']; ?></h3>
                                     <p><?php echo $nav['price']; ?></p>
@@ -153,7 +153,7 @@ include_once ("config_mb/configure_mb.php");
 	 		<center>
 		 		<div class="col-md-6 post">
 				 	<div class="col-md-6">
-				 		<img class="img-responsive" src="images/img1.jpg">
+				 		<img class="img-responsive" src="../images/img1.jpg">
 				 	</div>
 				 	<div class="col-md-6">
 				 		<small>01-01-2016</small>
@@ -165,7 +165,7 @@ include_once ("config_mb/configure_mb.php");
 	 		<center>
 		 		<div class="col-md-6 post">
 		 			<div class="col-md-6">
-		 				<img class="img-responsive" src="images/img2.jpg">
+		 				<img class="img-responsive" src="../images/img2.jpg">
 		 			</div>
 		 			<div class="col-md-6">
 		 				<small>01-01-2016</small>
@@ -182,12 +182,12 @@ include_once ("config_mb/configure_mb.php");
 	 	</div>
 	 </div><!--end of latestpost-->
          
-	 <?php include ("footer.php")?><!--get Footer.php-->
+	 <?php include("footer.php") ?><!--get Footer.php-->
          
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
+    <script src="../js/bootstrap.js"></script>
   </body>
 </html>

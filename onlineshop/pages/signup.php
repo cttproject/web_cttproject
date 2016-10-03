@@ -6,7 +6,7 @@ if(isset($_SESSION['sys_id'])) {
     header("Location: index.php");
     }
 
-    include_once ("config_mb/configure_mb.php");
+    include_once("config_mb/configure_mb.php");
 
 //set validation error flag as false
 $error = false;
@@ -56,8 +56,8 @@ if (isset($_POST['signup'])) {
 <head>
 <meta charset="utf-8">
 <title>Sign Up</title>
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="../../css/bootstrap.css">
+<link rel="stylesheet" href="../../css/custom.css">
 </head>
 
 <body>
@@ -119,8 +119,8 @@ if (isset($_POST['signup'])) {
 </div>
 
  <!-- Load jQuery and bootstrap datepicker scripts -->
-        <script src="js/jquery-3.1.0.min.js"></script>
-        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="../../js/jquery-3.1.0.min.js"></script>
+        <script src="../../js/bootstrap-datepicker.js"></script>
         <script type="text/javascript">
             // When the document is ready
             $(document).ready(function () { 

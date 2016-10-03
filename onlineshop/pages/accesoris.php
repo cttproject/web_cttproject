@@ -1,4 +1,4 @@
-<?php include ("config_mb/configure_mb.php");?>
+<?php include("config_mb/configure_mb.php");?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,8 +9,8 @@
     <title>Circle Table Tech.</title>
 
     <!-- CSS-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -33,7 +33,7 @@
 
   <div class="container">
       <!--end of menu-->
-      <?php include("menu.php")?>
+      <?php include("menu.php") ?>
 	 <div class="accessories container">
 	 	<div class="selection col-md-2">
 	 		<div class="list-group">
@@ -63,7 +63,7 @@
                             while ($product =  mysqli_fetch_assoc($result)){?>
                                 <div class="col-sm-6 col-md-4 text-center">
                                     <div class="thumbnail">
-                                      <img src="images/product/crop_top1.jpg">
+                                      <img src="../../images/product/crop_top1.jpg">
                                       <div class="caption">
                                         <h3><?php echo $product['label']; ?></h3>
                                         <p><?php echo $product['price']; ?></p>
@@ -79,12 +79,12 @@
 		</div>
 	 </div><!--end of laptop-->
 
-	 <?php include ("footer.php")?><!--get Footer.php-->
+	 <?php include("footer.php") ?><!--get Footer.php-->
  </div><!--end of container-->
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -42,7 +42,7 @@ include ("../config_mb/get_menu_laptop_label.php");
   </header><!--end of header-->
 
   <div class="container">
-        <?php include("../menu.php")?>
+        <?php include("../menu.php") ?>
 	 <div class="laptop container">
 	 	<div class="selection col-md-2">
 	 		<div class="list-group">
@@ -278,7 +278,7 @@ include ("../config_mb/get_menu_laptop_label.php");
 			</div>
 		</div>
 	 </div><!--end of laptop-->
-             <?php include ("../footer.php")?><!--get Footer.php-->
+             <?php include("../footer.php") ?><!--get Footer.php-->
  </div><!--end of footerbot-->
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

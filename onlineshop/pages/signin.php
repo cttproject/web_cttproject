@@ -5,7 +5,7 @@ if(isset($_SESSION['usr_id'])!="") {
     header("Location: index.php");
 }
 
-include_once ("config_mb/configure_mb.php");
+include_once("config_mb/configure_mb.php");
 
 //check if form is submitted
 if (isset($_POST['login'])) {
@@ -30,8 +30,8 @@ if (isset($_POST['login'])) {
 <head>
 <meta charset="utf-8">
 <title>Sign In</title>
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="../../css/bootstrap.css">
+<link rel="stylesheet" href="../../css/custom.css">
 </head>
 
 <body>
@@ -69,6 +69,6 @@ if (isset($_POST['login'])) {
 </div>
 
  <!-- Load jQuery and bootstrap datepicker scripts -->
-        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="../../js/jquery-3.1.0.min.js"></script>
 </body>
 </html>

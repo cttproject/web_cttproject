@@ -5,7 +5,7 @@
 if(isset($_SESSION['sys_id'])) {
     header("Location: index.php");
     }
-    include_once ("config_mb/configure_mb.php");
+    include_once("config_mb/configure_mb.php");
 
 //set validation error flag as false
 $error = false;
@@ -230,7 +230,7 @@ if (isset($_POST['signup'])) {
                         });
                       </script> 
                     </li>
-                    <li><a href="shopingcart.html" data-toggle="tooltip" data-placement="bottom" title="Your Shopping Cart">
+                    <li><a href="../pages/shopingcart.html" data-toggle="tooltip" data-placement="bottom" title="Your Shopping Cart">
                       <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
                     </li>
                   </ul>
