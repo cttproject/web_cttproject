@@ -13,6 +13,9 @@ header p {
 	background-color: #FFFFFF;
 	padding-top: 20px;
 }
+.menu img {
+  width: 150px;
+}
 .menu .navbar {
 	background-color: #FFFFFF;
 	border: 0px;
@@ -91,6 +94,7 @@ footer p {
 }
 footer img {
 	margin-bottom: 10px;
+  width: 150px;
 }
 footer .panel form button {
 	background-color: #3299e1;
