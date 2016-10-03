@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a45ed67-57b0-4a33-8e14-6e30b1801178" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/customnews.css" afterPath="$PROJECT_DIR$/css/customnews.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part_of/header.php" afterPath="$PROJECT_DIR$/part_of/header.php" />
     </list>
     <ignored path="web_cttproject.iws" />
@@ -23,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="427">
@@ -33,11 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customnews.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="customnews.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/customnews.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/part_of/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -71,8 +82,8 @@
         <option value="$PROJECT_DIR$/pages/old_news.php" />
         <option value="$PROJECT_DIR$/pages/tentang_kami.php" />
         <option value="$PROJECT_DIR$/pages/kontak_kami.php" />
-        <option value="$PROJECT_DIR$/css/customnews.css" />
         <option value="$PROJECT_DIR$/part_of/header.php" />
+        <option value="$PROJECT_DIR$/css/customnews.css" />
       </list>
     </option>
   </component>
@@ -253,12 +264,12 @@
       <workItem from="1474344335532" duration="77000" />
       <workItem from="1474371694822" duration="60000" />
       <workItem from="1474376969257" duration="1552000" />
-      <workItem from="1475490676792" duration="6881000" />
+      <workItem from="1475490676792" duration="7261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8570000" />
+    <option name="totallyTimeSpent" value="8950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="7" y="63" width="1400" height="833" extended-state="0" />
@@ -435,14 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/customnews.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/part_of/menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -451,18 +454,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part_of/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part_of/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/customnews.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding />
         </state>
       </provider>

@@ -33,6 +33,7 @@
 <div class="brand container-fluid">
     <div class="container font">
         <a href="index.php?home"><img src="images/logo web2.png"></a>
+        <h1>CIRCLE TABLE TECH.</h1>
         <h4>Terupdate, Aktual, dan Terpercaya</h4>
     </div>
 </div><!--end of brand-->
