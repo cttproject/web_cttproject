@@ -20,7 +20,7 @@ header ul li a {
 }
 .menu {
     background-color: #399ADE;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 .navbar {
     background-color: #399ADE;
@@ -55,11 +55,14 @@ header ul li a {
     margin: 0px 0px 30px;
     color: #399ADE;
 }
-.news .font1 h3 {
+/*.news .font1 h3 {
     margin-top: 0px;
-}
+}*/
 .news .row {
     margin-bottom: 20px;
+}
+.news-margin{
+    margin-top: 30px;
 }
 footer {
     background-color: #399ADE;

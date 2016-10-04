@@ -1,4 +1,4 @@
-<div class="news container">
+<div class="news container news-margin">
     <div class="col-md-8">
         <h2>OLD NEWS</h2>
         <div class="row">
