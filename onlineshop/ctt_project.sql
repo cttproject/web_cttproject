@@ -124,3 +124,20 @@ ALTER TABLE `sys_signup`
 
 ALTER TABLE `sys_signup`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--TABLE NEWS
+CREATE TABLE `sys_news` (
+  `id` int(11) NOT NULL,
+  `date` date NOT NULL,
+  `judul` varchar(100) NOT NULL,
+  `sinopsis` text NOT NULL,
+  `gambar` longtext NOT NULL,
+  `isi_berita` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `sys_news`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `sys_news`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
