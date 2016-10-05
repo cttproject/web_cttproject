@@ -30,7 +30,7 @@
     </ul>
 </header><!--end of header-->
 
-<div class="brand container-fluid">
+<div class="brand container">
     <div class="container font">
         <a href="index.php?home"><img src="images/logo web2.png"></a>
         <h1>CIRCLE TABLE TECH.</h1>

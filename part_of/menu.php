@@ -1,6 +1,6 @@
-<div class="menu container-fluid">
-    <!--<div class="col-md-2"></div>-->
-    <div class="col-md-12">
+<div class="menu container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,5 +33,5 @@
             </div><!-- /.container-fluid -->
         </nav>
     </div>
-    <!--<div class="col-md-2"></div>-->
+    <div class="col-md-2"></div>
 </div><!--end of menu-->

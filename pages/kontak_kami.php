@@ -1,9 +1,9 @@
-<div class="map container">
+<div class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2473832486967!2d107.0138303147692!3d-6.231082995489498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698ea2840cb729%3A0xcdd687f43d362a3!2sJl.+Irida+Barat+XIX+Blok+D+12+No.3%2C+Bekasi+Jaya%2C+Bekasi+Tim.%2C+Kota+Bks%2C+Jawa+Barat+17112!5e0!3m2!1sid!2sid!4v1471589026682" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
     </iframe>
 </div><!--end of map-->
 
-<div class="kontak container">
+<div class="kontak">
     <div class="col-md-4 text-center">
         <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
         <p>ADDRESS :</p>
@@ -21,7 +21,7 @@
     </div>
 </div><!--end of kontak-->
 
-<div class="pesan container">
+<div class="pesan">
     <div class="tittle col-md-12 text-center">
         <h3>CONTACT US</h3>
     </div>

@@ -10,7 +10,7 @@ include "part_of/menu.php";
 
 ?>
 
-<div class="content">
+<div class="content container">
     <?php
 
     if (isset($_GET['hot_news'])){
@@ -30,7 +30,7 @@ include "part_of/menu.php";
     ?>
 </div><!--end of content-->
 
-<footer class="container-fluid">
+<footer class="container">
     <?php
         include "part_of/footer.php";
     ?>

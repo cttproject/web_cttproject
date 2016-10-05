@@ -1,5 +1,7 @@
 /*---------------------------------------CSS NEWS-----------------------------------------*/
-
+body {
+    background-color: #EDEDED;
+}
 header ul li a {
     color: silver;
 }
@@ -20,7 +22,6 @@ header ul li a {
 }
 .menu {
     background-color: #399ADE;
-    margin-bottom: 30px;
 }
 .navbar {
     background-color: #399ADE;
@@ -30,18 +31,17 @@ header ul li a {
 .navbar .nav li a {
     color: whitesmoke;
 }
+.content {
+    background-color: #FFFFFF;
+}
 .banner {
     background-color: #FFFFFF;
-    padding: 5px;
-    margin-bottom: 30px;
+    padding: 15px 0px 0px;
 }
-.banner2 {
-    padding: 0px;
-}
-.banner2 a {
+.banner a {
     color: white;
 }
-.banner2 a:hover {
+.banner a:hover {
     text-decoration: none;
     color:#fff;
     text-shadow:
@@ -50,6 +50,9 @@ header ul li a {
             0px 0px 5px #399ADE,
             0px 0px 30px #399ADE,
             0px 3px 50px #399ADE;
+}
+.news {
+    padding-top: 30px;
 }
 .news h2 {
     margin: 0px 0px 30px;
@@ -61,12 +64,19 @@ header ul li a {
 .news .row {
     margin-bottom: 20px;
 }
+.news .row img {
+    padding-left: 0px;
+}
+.news .oldnews {
+    padding-right: 0px;
+}
 footer {
     background-color: #399ADE;
 }
 footer p {
     padding: 10px 0px;
     color: #F5F5F5;
+    margin-bottom: 0px;
 }
 
 /*----------------------------KONTAK KAMI------------------------------*/
