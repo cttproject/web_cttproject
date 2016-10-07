@@ -11,6 +11,21 @@ header ul li a {
     background-color: #FFFFFF;
     color: #399ADE;
 }
+
+@media (max-width: 767px) {
+    .brand .font {
+        padding-top: 50px;
+    }
+    .brand .font h1 {
+        font-size: 25px;
+    }
+    .brand .font img {
+        width: 250px;
+    }
+}
+.navbar-brand p {
+    color: whitesmoke;
+}
 .brand img {
     width: 300px;
 }
@@ -23,10 +38,16 @@ header ul li a {
 .menu {
     background-color: #399ADE;
 }
+.menu .navbar button {
+    background-color: whitesmoke;
+}
 .navbar {
     background-color: #399ADE;
     border: none;
     margin-bottom: 0px;
+}
+.navbar-brand {
+    font-family: 'Indie Flower', cursive;
 }
 .navbar .nav li a {
     color: whitesmoke;
