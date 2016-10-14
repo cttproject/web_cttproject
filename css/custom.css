@@ -225,6 +225,11 @@ iframe {
     left: 99px;
     top: -3px
 }
+
+.img_max_width{
+    max-width: 250px;
+}
+
 .step_complete {
     background: #357ebd
 }

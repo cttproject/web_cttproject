@@ -53,10 +53,11 @@
 
             while ($nav = mysqli_fetch_assoc($result)) { ?>
                 <div class="row">
-                    <img class="img-responsive col-md-8" src="images/img1.jpg">
+                    <img class="img-responsive col-md-8" style="max-width: 250px;" 
+                         src="images/img1.jpg">
                     <p><?php echo $nav['date']; ?></p>
                     <div class="font1">
-                        <h3><?php echo $nav['judul']; ?></h3>
+                        <h3><a href="#"><?php echo $nav['judul']; ?></a></h3>
                         <p><?php echo $nav['sinopsis']; ?></p>
                     </div>
                 </div>
