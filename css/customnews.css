@@ -22,6 +22,12 @@ header ul li a {
     .brand .font img {
         width: 250px;
     }
+    .banner .item h3 {
+        font-size: 18px;
+    }
+    .banner .item a {
+        font-size: 10px;
+    }
 }
 .navbar-brand p {
     color: whitesmoke;
