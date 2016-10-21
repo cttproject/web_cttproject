@@ -13,10 +13,14 @@ include "part_of/menu.php";
 <div class="content container">
     <?php
 
-    if (isset($_GET['hot_news'])){
-        include "pages/hot_news.php";
-    } elseif (isset($_GET['old_news'])){
-        include "pages/old_news.php";
+    if (isset($_GET['news'])){
+        include "pages/news.php";
+    } elseif (isset($_GET['gadget'])){
+        include "pages/gadget.php";
+    } elseif (isset($_GET['games'])){
+        include "pages/games.php";
+    } elseif (isset($_GET['photograph'])){
+        include "pages/photograph.php";
     } elseif (isset($_GET['tentang_kami'])){
         include "pages/tentang_kami.php";
     } elseif (isset($_GET['kontak_kami'])){

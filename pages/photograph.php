@@ -1,6 +1,6 @@
 <div class="news">
     <div class="col-md-8">
-        <h2>OLD NEWS</h2>
+        <h2>Photograph</h2>
         <div class="row">
             <img class="img-responsive col-md-8" src="images/img1.jpg">
             <p>01-01-2016</p>
@@ -45,4 +45,10 @@
             </ul>
         </nav><!--end of pagination-->
     </div>
-</div>
+    <div class="col-md-4 oldnews">
+        <?php
+        include "part_of/list_group.php";
+
+        ?>
+    </div><!--end of old news-->
+</div><!--end of news-->

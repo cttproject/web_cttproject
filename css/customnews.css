@@ -7,20 +7,23 @@ header ul li a {
 }
 .brand {
     background: url(../images/bg.png);
-    height: 300px;
+    height: 200px;
     background-color: #FFFFFF;
     color: #399ADE;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1279px) {
     .brand .font {
-        padding-top: 50px;
+        padding-top: 40px;
     }
     .brand .font h1 {
         font-size: 25px;
     }
+    .brand .font h4 {
+        font-size: 15px;
+    }
     .brand .font img {
-        width: 250px;
+        width: 150px;
     }
     .banner .item h3 {
         font-size: 18px;
@@ -33,16 +36,19 @@ header ul li a {
     color: whitesmoke;
 }
 .brand img {
-    width: 300px;
+    width: 150px;
 }
 .font {
-    padding-top: 30px;
+    padding-top: 100px;
 }
 .font h1 {
     margin-top: 0px;
 }
 .menu {
     background-color: #399ADE;
+}
+.menu .nav li {
+    margin-right: 24px;
 }
 .menu .navbar button {
     background-color: whitesmoke;

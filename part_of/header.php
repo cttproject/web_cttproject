@@ -23,17 +23,32 @@
 </head>
 <body>
 <header class="container">
-    <ul class="nav nav-pills">
-        <li role="presentation"><a href="index.php?tentang_kami">About Us</a></li>
-        <li role="presentation"><a href="index.php?kontak_kami">Contact Us</a></li>
-        <li role="presentation"><a href="index.php?online_shop">Online Shop</a></li>
-    </ul>
+    <div class="col-md-6 col-sm-6">
+        <ul class="nav nav-pills">
+            <li role="presentation"><a href="index.php?tentang_kami">About Us</a></li>
+            <li role="presentation"><a href="index.php?kontak_kami">Contact Us</a></li>
+            <li role="presentation"><a href="index.php?online_shop">Online Shop</a></li>
+        </ul>
+    </div>
+    <div class="col-md-6 col-sm-6">
+        <form class="navbar-form navbar-right">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+        </form>
+    </div>
 </header><!--end of header-->
 
 <div class="brand container">
-    <div class="container font">
-        <a href="index.php?home"><img src="images/logo web2.png"></a>
-        <h1>CIRCLE TABLE TECH.</h1>
-        <h4>Terupdate, Aktual, dan Terpercaya</h4>
+    <div class="container font col-md-6">
+        <div class="col-md-3">
+            <a href="index.php?home"><img src="images/logo web2.png"></a>
+        </div>
+        <div class="col-md-9">
+            <h1>CIRCLE TABLE TECH.</h1>
+            <h4>Terupdate, Aktual, dan Terpercaya</h4>
+        </div>
     </div>
+    <div class="col-md-6"></div>
 </div><!--end of brand-->

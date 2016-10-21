@@ -1,6 +1,6 @@
 <div class="news">
     <div class="col-md-8">
-        <h2>HOT NEWS</h2>
+        <h2>Gadget</h2>
         <div class="row">
             <img class="img-responsive col-md-8" src="images/img1.jpg">
             <p>01-01-2016</p>
