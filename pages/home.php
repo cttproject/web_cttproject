@@ -57,7 +57,7 @@
                          src="images/img1.jpg">
                     <p><?php echo $nav['date']; ?></p>
                     <div class="font1">
-                        <h3><a href="index.php?single_page"><?php echo $nav['judul']; ?></a></h3>
+                        <h3><a id="<?php echo $nav['id']; ?>" href="index.php?single_page&id=<?php echo $nav['id']; ?>"><?php echo $nav['judul']; ?></a></h3>
                         <p><?php echo $nav['sinopsis']; ?></p>
                     </div>
                 </div>
