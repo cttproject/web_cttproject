@@ -19,6 +19,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.php?home">Home <span class="sr-only">(current)</span></a></li>
                         <li><a href="index.php?news">News</a></li>
+                        <li><a href="index.php?education">Education</a></li>
                         <li><a href="index.php?gadget">Gadget</a></li>
                         <li><a href="index.php?games">Games</a></li>
                         <li><a href="index.php?photograph">Photograph</a></li>

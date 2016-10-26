@@ -1,6 +1,6 @@
 <div class="news">
     <div class="col-md-8">
-        <h2>News</h2>
+        <h2>Education</h2>
         <div class="berita row">
             <img class="img-responsive col-md-8" src="images/img1.jpg">
             <p>01-01-2016</p>

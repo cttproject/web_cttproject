@@ -52,12 +52,12 @@
             $result = mysqli_query($dbc, $query);
 
             while ($nav = mysqli_fetch_assoc($result)) { ?>
-                <div class="row">
+                <div class="berita row">
                     <img class="img-responsive col-md-8" style="max-width: 250px;" 
                          src="images/img1.jpg">
                     <p><?php echo $nav['date']; ?></p>
                     <div class="font1">
-                        <h3><a href="#"><?php echo $nav['judul']; ?></a></h3>
+                        <h3><a href="index.php?single_page"><?php echo $nav['judul']; ?></a></h3>
                         <p><?php echo $nav['sinopsis']; ?></p>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
             </ul>
         </nav><!--end of pagination-->
     </div>
-    <div class="col-md-4 oldnews">
+    <div class="col-md-4 trending">
         <?php
         include "part_of/list_group.php";
 

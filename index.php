@@ -15,12 +15,16 @@ include "part_of/menu.php";
 
     if (isset($_GET['news'])){
         include "pages/news.php";
+    } elseif (isset($_GET['education'])){
+        include "pages/education.php";
     } elseif (isset($_GET['gadget'])){
         include "pages/gadget.php";
     } elseif (isset($_GET['games'])){
         include "pages/games.php";
     } elseif (isset($_GET['photograph'])){
         include "pages/photograph.php";
+    } elseif (isset($_GET['single_page'])){
+        include "pages/single_page.php";
     } elseif (isset($_GET['tentang_kami'])){
         include "pages/tentang_kami.php";
     } elseif (isset($_GET['kontak_kami'])){

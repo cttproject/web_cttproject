@@ -38,17 +38,17 @@ header ul li a {
 .brand img {
     width: 150px;
 }
-.font {
+.brand .font {
     padding-top: 100px;
 }
-.font h1 {
+.brand .font h1 {
     margin-top: 0px;
 }
 .menu {
     background-color: #399ADE;
 }
 .menu .nav li {
-    margin-right: 24px;
+    margin-right: 4px;
 }
 .menu .navbar button {
     background-color: whitesmoke;
@@ -91,17 +91,18 @@ header ul li a {
     margin: 0px 0px 30px;
     color: #399ADE;
 }
-.news .font1 h3 {
-    margin-top: 0px;
+.news .berita {
+    margin-bottom: 10px;
 }
-.news .row {
+.news .berita .font1 h3 {
+    margin-top: 10px;
+}
+.news img {
+    padding-left: 0px;
     margin-bottom: 20px;
 }
-.news .row img {
-    padding-left: 0px;
-}
-.news .oldnews {
-    padding-right: 0px;
+.news .trending {
+    padding: 0px;
 }
 footer {
     background-color: #399ADE;
