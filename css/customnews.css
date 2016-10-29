@@ -47,6 +47,9 @@ header ul li a {
 .menu {
     background-color: #399ADE;
 }
+.menu .search input[type=text]{
+    width: 100px;
+}
 .menu .nav li {
     margin-right: 4px;
 }

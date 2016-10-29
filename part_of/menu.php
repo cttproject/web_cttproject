@@ -11,7 +11,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <span class="navbar-brand visible-xs-block"><p>Navigation &rarr;</p></span>
+                    <span class="navbar-brand visible-xs-block"><p>Menu &rarr;</p></span>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -24,10 +24,24 @@
                         <li><a href="index.php?games">Games</a></li>
                         <li><a href="index.php?photograph">Photograph</a></li>
                     </ul>
-
+                    <form class=" search navbar-form navbar-right visible-xs">
+                        <div class="form-group disabled">
+                            <input id="searchId" type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <input type="button" onclick="location.href=getKey();" value="Search" class="btn btn-default"/>
+                    </form>
                 </div><!-- /.navbar-collapse -->
+
             </div><!-- /.container-fluid -->
+
         </nav>
     </div>
     <div class="col-md-3 col-sm-1"></div>
 </div><!--end of menu-->
+<script type="text/javascript">
+    function getKey(){
+        var textInputVal = document.getElementById('searchId').value;
+        alert(textInputVal);
+//        return 'index.php?search='+textInputVal;
+    }
+</script>

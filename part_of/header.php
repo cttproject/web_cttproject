@@ -31,7 +31,7 @@
         </ul>
     </div>
     <div class="col-md-6 col-sm-6">
-        <form class="navbar-form navbar-right">
+        <form class="navbar-form navbar-right hidden-xs">
             <div class="form-group">
                 <input id="searchId" type="text" class="form-control" placeholder="Search">
             </div>

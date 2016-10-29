@@ -8,7 +8,7 @@
 
             while ($nav = mysqli_fetch_assoc($result)) { ?>
                 <h2><?php echo $nav['judul']; ?></h2>
-                    <div class="berita row">
+                    <div class="berita">
                         <p><?php echo $nav['date']; ?></p>
                         <img class="img-responsive col-md-8" src="images/img1.jpg">
                         <div class="font1">

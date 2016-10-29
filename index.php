@@ -11,6 +11,7 @@ include "part_of/menu.php";
 ?>
 
 <div class="content container">
+
     <?php
 
     if (isset($_GET['news'])){
