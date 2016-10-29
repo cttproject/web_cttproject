@@ -33,9 +33,9 @@
     <div class="col-md-6 col-sm-6">
         <form class="navbar-form navbar-right">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+                <input id="searchId" type="text" class="form-control" placeholder="Search">
             </div>
-            <button type="submit" class="btn btn-default">Search</button>
+            <input type="button" onclick="location.href=getKey();" value="Search" class="btn btn-default"/>
         </form>
     </div>
 </header><!--end of header-->
@@ -52,3 +52,10 @@
     </div>
     <div class="col-md-6"></div>
 </div><!--end of brand-->
+<script type="text/javascript">
+    function getKey(){
+        var textInputVal = document.getElementById('searchId').value;
+//        alert(textInputVal);
+        return 'index.php?search='+textInputVal;
+    }
+</script>

@@ -31,6 +31,8 @@ include "part_of/menu.php";
         include "pages/kontak_kami.php";
     } elseif (isset($_GET['online_shop'])){
         echo "<h1>COMING SOON!!!</h1>";
+    } elseif (isset($_GET['search'])){
+        include "pages/home.php";
     } else {
         include "pages/home.php";
     }
