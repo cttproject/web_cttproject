@@ -8,6 +8,7 @@
     <title><?php echo $site_title ?></title>
 
     <!-- CSS-->
+    <link rel="stylesheet" href="js/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/customnews.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -23,7 +24,7 @@
 </head>
 <body>
 <header class="container">
-    <div class="col-md-6 col-sm-6">
+    <div class="col-md-6 col-sm-6 hidden-xs">
         <ul class="nav nav-pills">
             <li role="presentation"><a href="index.php?tentang_kami">About Us</a></li>
             <li role="presentation"><a href="index.php?kontak_kami">Contact Us</a></li>

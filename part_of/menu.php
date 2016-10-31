@@ -27,8 +27,8 @@
                     <form class=" search navbar-form navbar-right visible-xs">
                         <div class="form-group disabled">
                             <input id="searchId" type="text" class="form-control" placeholder="Search">
+                            <input type="button" onclick="location.href=getKey();" value="Search" class="btn btn-default"/>
                         </div>
-                        <input type="button" onclick="location.href=getKey();" value="Search" class="btn btn-default"/>
                     </form>
                 </div><!-- /.navbar-collapse -->
 
