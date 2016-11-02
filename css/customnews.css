@@ -31,6 +31,9 @@ header ul li a {
     .banner .item a {
         font-size: 10px;
     }
+    .menutop {
+        padding-left: 0px;
+    }
 }
 .navbar-brand p {
     color: whitesmoke;
@@ -110,11 +113,30 @@ header ul li a {
 }
 footer {
     background-color: #399ADE;
+    color: #F5F5F5;
+}
+footer .sosmed {
+    margin-bottom: 10px;    
 }
 footer p {
     padding: 10px 0px;
-    color: #F5F5F5;
     margin-bottom: 0px;
+}
+footer .nav li a {
+    color: whitesmoke;
+}
+footer .nav li a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #399ADE;
+}
+.footerBot {
+    padding: 15px 30px;
+    background-color: #337AB7;
+}
+.footerBot p {
+    margin-bottom: 0px;
+    color: whitesmoke;
 }
 
 /*----------------------------KONTAK KAMI------------------------------*/

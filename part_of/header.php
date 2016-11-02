@@ -24,7 +24,7 @@
 </head>
 <body>
 <header class="container">
-    <div class="col-md-6 col-sm-6 hidden-xs">
+    <div class="menutop col-md-6 col-sm-6">
         <ul class="nav nav-pills">
             <li role="presentation"><a href="index.php?tentang_kami">About Us</a></li>
             <li role="presentation"><a href="index.php?kontak_kami">Contact Us</a></li>

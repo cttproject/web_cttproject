@@ -46,6 +46,9 @@ include "part_of/menu.php";
         include "part_of/footer.php";
     ?>
 </footer>
+<div class="footerBot container">
+    <p>Copyright &copy; Circle Table Technology | 2016.</p>
+</div>
 
 
 
